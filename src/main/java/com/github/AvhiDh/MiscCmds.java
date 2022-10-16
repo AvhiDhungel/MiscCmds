@@ -28,6 +28,7 @@ public final class MiscCmds extends JavaPlugin {
         List<String> header = new ArrayList<String>();
         header.add("List of Permissions:");
         header.add("Freeze: MiscCmds.Freeze");
+        header.add("DeathSpot: deathspot.use, deathspot.admin");
 
         config.addDefault("sql.url", "localhost:3306");
         config.addDefault("sql.database", "Survival-MTH");

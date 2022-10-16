@@ -12,4 +12,4 @@ commands:
     description: Get Player's DeathSpot
     usage: /deathspot, /ds
     aliases: ds
-    permission: DeathSpot.Use
+    permission: deathspot.use
