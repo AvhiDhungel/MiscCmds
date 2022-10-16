@@ -1,0 +1,15 @@
+name: MiscCmds
+version: 1.0
+author: AvhiDh
+main: com.github.AvhiDh.MiscCmds
+api-version: '1.19'
+commands:
+  freeze:
+    description: Freeze player from moving
+    usage: /freeze <player>
+    permission: MiscCmds.Freeze
+  deathspot:
+    description: Get Player's DeathSpot
+    usage: /deathspot, /ds
+    aliases: ds
+    permission: DeathSpot.Use
