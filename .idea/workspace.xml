@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f274862-f342-4517-a23c-0dcdfe67f333" name="Changes" comment="DeathSpot Config Header Update">
+    <list default="true" id="0f274862-f342-4517-a23c-0dcdfe67f333" name="Changes" comment="Update MTHTools version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/TabCompleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/TabCompleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/EventListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/EventListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/MiscCmds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/MiscCmds.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,8 @@
     &quot;last_opened_file_path&quot;: &quot;D:/Projects/SpigotDev/DeathSpot&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665955738045</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update MTHTools version">
+      <created>1666555131393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666555131393</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DeathSpot" />
     <MESSAGE value="DeathSpot Config Header Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="DeathSpot Config Header Update" />
+    <MESSAGE value="Update MTHTools version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update MTHTools version" />
   </component>
 </project>

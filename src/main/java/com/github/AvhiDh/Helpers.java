@@ -10,11 +10,17 @@ public class Helpers {
         DEATHSPOT
     }
 
-    public static HashMap<UUID, Boolean> frozenPlayers = new HashMap<UUID, Boolean>();
+    public static HashMap<UUID, Boolean> frozenPlayers;
+
+    public static void initialize() {
+        frozenPlayers = new HashMap<UUID, Boolean>();
+    }
 
     public static void performCleanup() {
-        frozenPlayers.clear();
-        frozenPlayers = null;
+        if (frozenPlayers != null) {
+            frozenPlayers.clear();
+            frozenPlayers = null;
+        }
     }
 
 }

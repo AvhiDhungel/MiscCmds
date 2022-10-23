@@ -15,6 +15,8 @@ public final class MiscCmds extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        Helpers.initialize();
+
         setupConfig();
         setupDB();
         setupCommands();

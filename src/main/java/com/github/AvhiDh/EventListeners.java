@@ -22,6 +22,8 @@ public class EventListeners implements Listener {
 
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent e) {
+        if (Helpers.frozenPlayers == null) {Helpers.initialize();}
+
         Player pl = e.getPlayer();
         UUID plId = pl.getUniqueId();
 
