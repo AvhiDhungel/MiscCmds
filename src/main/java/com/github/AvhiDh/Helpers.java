@@ -7,7 +7,8 @@ public class Helpers {
 
     public enum AvailableCmds {
         FREEZE,
-        DEATHSPOT
+        DEATHSPOT,
+        HP
     }
 
     public static HashMap<UUID, Boolean> frozenPlayers;

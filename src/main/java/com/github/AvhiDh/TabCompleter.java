@@ -23,13 +23,17 @@ public class TabCompleter implements org.bukkit.command.TabCompleter {
         String arg;
         if (args.length > 0) { arg = args[0].toLowerCase(); } else {arg = "";}
 
-        if (cmd == Helpers.AvailableCmds.FREEZE) {
-            playerListCompleter(li, arg);
-        } else if (cmd == Helpers.AvailableCmds.DEATHSPOT) {
-            if (sender.hasPermission("deathspot.admin")) {
-                if (arg.length() == 0 || arg.contains("reload")) { li.add("reload"); }
+        List<Helpers.AvailableCmds> usesPlayerList = new ArrayList<>();
+        usesPlayerList.add(Helpers.AvailableCmds.DEATHSPOT);
+        usesPlayerList.add(Helpers.AvailableCmds.FREEZE);
+        usesPlayerList.add(Helpers.AvailableCmds.HP);
+
+        if (usesPlayerList.contains(cmd)) { playerListCompleter(li, arg); }
+
+        if (cmd == Helpers.AvailableCmds.DEATHSPOT) {
+            if (sender.hasPermission("deathspot.admin") && (arg.length() == 0 || arg.contains("reload"))) {
+                li.add("reload");
             }
-            playerListCompleter(li, arg);
         }
 
         return li;
