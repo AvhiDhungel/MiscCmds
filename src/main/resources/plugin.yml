@@ -2,7 +2,7 @@ name: MiscCmds
 version: 1.1
 author: AvhiDh
 main: com.github.AvhiDh.MiscCmds
-api-version: '1.20.4'
+api-version: '1.19'
 commands:
   freeze:
     description: Freeze player from moving
@@ -15,5 +15,5 @@ commands:
     permission: deathspot.use
   hp:
     description: Shortcut for /helpop
-    usage: /hp
+    usage: /hp <message>
     permission: essentials.helpop

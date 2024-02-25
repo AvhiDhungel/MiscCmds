@@ -26,7 +26,6 @@ public class TabCompleter implements org.bukkit.command.TabCompleter {
         List<Helpers.AvailableCmds> usesPlayerList = new ArrayList<>();
         usesPlayerList.add(Helpers.AvailableCmds.DEATHSPOT);
         usesPlayerList.add(Helpers.AvailableCmds.FREEZE);
-        usesPlayerList.add(Helpers.AvailableCmds.HP);
 
         if (usesPlayerList.contains(cmd)) { playerListCompleter(li, arg); }
 

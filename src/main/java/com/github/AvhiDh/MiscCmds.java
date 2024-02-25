@@ -66,6 +66,10 @@ public final class MiscCmds extends JavaPlugin {
         PluginCommand dsCmd = this.getCommand("deathspot");
         dsCmd.setExecutor(new Commands(Helpers.AvailableCmds.DEATHSPOT, reloadConfig, conn));
         dsCmd.setTabCompleter(new TabCompleter(Helpers.AvailableCmds.DEATHSPOT));
+
+        PluginCommand hpCmd = this.getCommand("hp");
+        hpCmd.setExecutor(new Commands(Helpers.AvailableCmds.HP, reloadConfig, conn));
+        hpCmd.setTabCompleter(new TabCompleter(Helpers.AvailableCmds.HP));
     }
 
     private void setupListeners() {
