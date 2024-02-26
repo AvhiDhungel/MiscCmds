@@ -10,7 +10,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.Arrays;
 import java.util.Date;
 
 public class Commands implements CommandExecutor {
@@ -37,8 +36,10 @@ public class Commands implements CommandExecutor {
             onFreezeCommand(sender, command, label, args);
         } else if (cmd == Helpers.AvailableCmds.DEATHSPOT) {
             onDeathSpotCommand(sender, command, label, args);
-        } else if (cmd == Helpers.AvailableCmds.HP) {
+        } else if (cmd == Helpers.AvailableCmds.HELPOP) {
             onHPCommand(sender, command, label, args);
+        } else if (cmd == Helpers.AvailableCmds.STAFFCHAT) {
+            onStaffChatCommand(sender, command, label, args);
         }
         return true;
     }
@@ -124,6 +125,13 @@ public class Commands implements CommandExecutor {
         if (sender instanceof Player) {
             Player p = (Player) sender;
             p.performCommand(String.format("helpop %s", String.join(" ", args)));
+        }
+    }
+
+    private void onStaffChatCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (sender instanceof Player) {
+            Player p = (Player) sender;
+            p.chat(String.format("@ %s", String.join(" ", args)));
         }
     }
 

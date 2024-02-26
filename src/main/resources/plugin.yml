@@ -13,7 +13,12 @@ commands:
     usage: /deathspot, /ds
     aliases: ds
     permission: deathspot.use
-  hp:
+  h:
     description: Shortcut for /helpop
     usage: /hp <message>
     permission: essentials.helpop
+  staffchat:
+    description: Staff Chat
+    usage: /sc <message>
+    aliases: sc
+    permission: spartan.staff_chat

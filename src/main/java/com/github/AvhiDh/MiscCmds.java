@@ -67,9 +67,13 @@ public final class MiscCmds extends JavaPlugin {
         dsCmd.setExecutor(new Commands(Helpers.AvailableCmds.DEATHSPOT, reloadConfig, conn));
         dsCmd.setTabCompleter(new TabCompleter(Helpers.AvailableCmds.DEATHSPOT));
 
-        PluginCommand hpCmd = this.getCommand("hp");
-        hpCmd.setExecutor(new Commands(Helpers.AvailableCmds.HP, reloadConfig, conn));
-        hpCmd.setTabCompleter(new TabCompleter(Helpers.AvailableCmds.HP));
+        PluginCommand hpCmd = this.getCommand("h");
+        hpCmd.setExecutor(new Commands(Helpers.AvailableCmds.HELPOP, reloadConfig, conn));
+        hpCmd.setTabCompleter(new TabCompleter(Helpers.AvailableCmds.HELPOP));
+
+        PluginCommand scCmd = this.getCommand("staffchat");
+        scCmd.setExecutor(new Commands(Helpers.AvailableCmds.STAFFCHAT, reloadConfig, conn));
+        scCmd.setTabCompleter(new TabCompleter(Helpers.AvailableCmds.STAFFCHAT));
     }
 
     private void setupListeners() {
