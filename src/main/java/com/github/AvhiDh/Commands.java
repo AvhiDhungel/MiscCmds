@@ -9,7 +9,10 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.TextComponent;
 
+import java.awt.*;
 import java.util.Date;
 
 public class Commands implements CommandExecutor {
@@ -93,7 +96,7 @@ public class Commands implements CommandExecutor {
                     sql.appendLine("LIMIT 1");
 
                     Integer xPos, yPos, zPos;
-                    String world, msg;
+                    String world, msg, recommended;
                     Date d;
 
                     SqlDataReader dr = conn.execute(sql);
@@ -105,18 +108,25 @@ public class Commands implements CommandExecutor {
                         world = dr.getString("fldWorld");
                         d = dr.getDate("fldDate");
 
+                        recommended = String.format("/tppos %s %s %s %s", xPos, yPos, zPos, world);
                         msg = String.format("%s%s %slast died in %s%s %s %s %s %son %s%s",
                                 ChatColor.YELLOW, pl.getName(), ChatColor.GREEN,
                                 ChatColor.YELLOW, xPos, yPos, zPos, world,
                                 ChatColor.GREEN, ChatColor.YELLOW, d.toString());
 
+
                     } else {
                         msg = "No previous death location found for " + ChatColor.YELLOW + pl.getName();
+                        recommended = "";
                     }
 
                     conn.close();
 
-                    SendMessage(sender, msg);
+                    if (sender instanceof Player && !recommended.isEmpty()) {
+                        SendClickableMessage(sender, msg + ChatColor.WHITE + " - Click to Teleport", recommended);
+                    } else {
+                        SendMessage(sender, msg);
+                    }
                 }
             }
 
@@ -137,7 +147,12 @@ public class Commands implements CommandExecutor {
         }
     }
 
-    private void SendMessage(CommandSender s, String msg) {
-        s.sendMessage(prefix + msg);
+    private void SendMessage(CommandSender s, String msg) {s.sendMessage(prefix + msg);}
+    private void SendClickableMessage(CommandSender s, String msg, String recommendedCommand) {
+        TextComponent component = new TextComponent(msg);
+        component.setClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, recommendedCommand));
+
+        Player sendingPlayer = (Player) s;
+        sendingPlayer.spigot().sendMessage(component);
     }
 }
