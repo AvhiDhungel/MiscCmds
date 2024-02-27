@@ -114,6 +114,8 @@ public class Commands implements CommandExecutor {
                         msg = "No previous death location found for " + ChatColor.YELLOW + pl.getName();
                     }
 
+                    conn.close();
+
                     SendMessage(sender, msg);
                 }
             }

@@ -24,6 +24,7 @@ public class DBInitializer {
         sql.appendLine(");");
 
         conn.executeNonQuery(sql);
+        conn.close();
     }
 
 }

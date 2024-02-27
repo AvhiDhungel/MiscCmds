@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f274862-f342-4517-a23c-0dcdfe67f333" name="Changes" comment="Fix API Version">
+    <list default="true" id="0f274862-f342-4517-a23c-0dcdfe67f333" name="Changes" comment="Staff chat and /h">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/Helpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/MiscCmds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/MiscCmds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/DBInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/AvhiDh/DBInitializer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
